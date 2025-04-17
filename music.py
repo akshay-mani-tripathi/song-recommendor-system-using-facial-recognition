@@ -6,10 +6,18 @@ import numpy as np
 import mediapipe as mp 
 from keras.models import load_model
 import webbrowser
+import os
 
+if os.path.exists("model.h5"):
+    models = load_model("model.h5")
+else:
+    st.error("model.h5 not found.")
 
-models  = load_model("model.h5")
-labels = np.load("labels.npy")
+if os.path.exists("labels.npy"):
+    labels = np.load("labels.npy")
+else:
+    st.error("labels.npy not found.")
+
 holistic = mp.solutions.holistic
 hands = mp.solutions.hands
 holis = holistic.Holistic()
