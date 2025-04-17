@@ -3,6 +3,6 @@ opencv-python==4.9.0.80
 mediapipe==0.10.9
 tensorflow==2.13.0
 keras==2.13.1
-streamlit==1.32.2
+streamlit==1.44.1
 streamlit-webrtc==0.45.0
 av==10.0.0
