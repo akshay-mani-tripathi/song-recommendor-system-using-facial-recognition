@@ -8,10 +8,15 @@ from keras.models import load_model
 import webbrowser
 import os
 
+
 if os.path.exists("model.h5"):
-    models = load_model("model.h5", compile=False)
+    try:
+        models = load_model("model.h5", compile=False)
+    except Exception as e:
+        st.error(f"Failed to load model: {e}")
 else:
     st.error("model.h5 not found.")
+    
 
 if os.path.exists("labels.npy"):
     labels = np.load("labels.npy")
