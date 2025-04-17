@@ -9,7 +9,7 @@ import webbrowser
 import os
 
 if os.path.exists("model.h5"):
-    models = load_model("model.h5")
+    models = load_model("model.h5", compile=False)
 else:
     st.error("model.h5 not found.")
 
