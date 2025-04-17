@@ -1,7 +1,8 @@
-numpy
-tensorflow
-mediapipe
-opencv-python
+av
 streamlit
 streamlit-webrtc
-av
+opencv-python-headless
+mediapipe
+numpy
+tensorflow
+keras
