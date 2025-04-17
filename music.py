@@ -1,14 +1,4 @@
 import streamlit as st
-
-import subprocess
-import sys
-
-# Check if streamlit_webrtc is installed, if not install it
-try:
-    import streamlit_webrtc
-except ImportError:
-    subprocess.check_call([sys.executable, "-m", "pip", "install", "streamlit-webrtc"])
-
 from streamlit_webrtc import webrtc_streamer
 import av
 import cv2 
