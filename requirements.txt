@@ -1,13 +1,8 @@
-streamlit==1.31.0
-streamlit-webrtc==0.47.1
-spotipy==2.24.0
-SpeechRecognition==3.13.0
-pyaudio==0.2.14
-numpy==1.26.4
-requests==2.31.0
-
+numpy==1.24.4
 opencv-python==4.9.0.80
 mediapipe==0.10.9
 tensorflow==2.13.0
 keras==2.13.1
+streamlit==1.32.2
+streamlit-webrtc==0.45.0
 av==10.0.0
